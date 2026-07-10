@@ -77,6 +77,9 @@ h1.mega .l1{display:block;color:var(--txt)}
 h1.mega .l2{display:block;background:linear-gradient(92deg,#F5A623,#FF6B61 45%,#C084FC 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .cover-sub{margin:22px auto 0;max-width:52ch;color:var(--txt-soft);font-size:1.04rem;line-height:1.6;font-weight:500}
 .cover-sub b{color:var(--txt)}
+.bill-notice{display:inline-flex;align-items:center;gap:18px;margin-top:30px;padding:24px 44px;border-radius:100px;background:linear-gradient(90deg,rgba(245,166,35,.24),rgba(255,107,97,.18));border:2px solid rgba(245,166,35,.55);color:var(--gold);font-weight:700;font-size:1.48rem;box-shadow:0 0 56px rgba(245,166,35,.2)}
+.bill-notice svg{width:30px;height:30px;flex-shrink:0}
+.bill-notice b{color:#fff}
 .cover-acts{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
 .cbtn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:100px;font-weight:700;font-size:.9rem;transition:transform .2s,box-shadow .2s}
 .cbtn.solid{background:var(--gold);color:#141a33}
@@ -131,6 +134,7 @@ h2.wtitle{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp
 h2.fin{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,5.4vw,3.8rem);line-height:1.04;letter-spacing:-.02em}
 h2.fin span{background:linear-gradient(92deg,#F5A623,#FF6B61);-webkit-background-clip:text;background-clip:text;color:transparent}
 .fin-sub{margin:18px auto 0;max-width:48ch;color:var(--txt-soft);font-size:1.02rem;line-height:1.6}
+.fin-sub b{color:var(--txt)}
 .fin-contacts{display:flex;gap:26px;justify-content:center;margin-top:30px;flex-wrap:wrap;color:var(--txt-soft);font-weight:600;font-size:.92rem}
 .fin-contacts span{display:inline-flex;align-items:center;gap:9px}
 .fin-contacts svg{width:16px;height:16px;color:var(--gold)}
@@ -213,6 +217,8 @@ h2.fin span{background:linear-gradient(92deg,#F5A623,#FF6B61);-webkit-background
   .shelf{gap:12px}
   .hbtn span{display:none}
   .hbtn{padding:9px 12px}
+  .bill-notice{padding:14px 20px;font-size:1rem;gap:12px;text-align:left;border-radius:22px;white-space:normal}
+  .bill-notice svg{width:22px;height:22px}
 }
 
 /* ── IMPRESSÃO compacta (clara) ── */
@@ -228,6 +234,8 @@ h2.fin span{background:linear-gradient(92deg,#F5A623,#FF6B61);-webkit-background
   h1.mega .l1,h1.mega .l2{display:inline;color:#0E2148;background:none;-webkit-text-fill-color:#0E2148}
   .cover-sub{color:#41527a;font-size:.78rem;margin-top:6px;max-width:none}
   .cover-sub b{color:#0E2148}
+  .bill-notice{background:#fff6e6;border-color:#f0c987;color:#b97706;margin-top:8px;padding:5px 12px;font-size:.62rem;box-shadow:none}
+  .bill-notice b{color:#0E2148}
   .world-in{max-width:none}
   .whead{max-width:none;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:1px solid #e2e6f0;padding-bottom:4px;margin-top:10px;break-after:avoid}
   .wkicker{color:#0E2148}
@@ -283,6 +291,10 @@ h2.fin span{background:linear-gradient(92deg,#F5A623,#FF6B61);-webkit-background
     <span class="eyebrow">Reposição de estoque · Importados</span>
     <h1 class="mega"><span class="l1">23 blocos. 10 mundos.</span><span class="l2">De volta ao estoque.</span></h1>
     <p class="cover-sub">Um <b>showroom digital</b> com todos os blocos de montar importados de linha que acabaram de ser repostos. Explore mundo por mundo — ou aperte o play e deixe a vitrine rodar sozinha.</p>
+    <div class="bill-notice">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+      Faturamento disponível a partir do <b>início de setembro</b>
+    </div>
     <div class="cover-acts">
       <button class="cbtn solid" onclick="startShow(0)">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -307,7 +319,7 @@ h2.fin span{background:linear-gradient(92deg,#F5A623,#FF6B61);-webkit-background
   <div class="gridbg"></div>
   <div class="final-in">
     <h2 class="fin">Chegou sem aviso.<br><span>Vai embora do mesmo jeito.</span></h2>
-    <p class="fin-sub">Reposição pontual, sem previsão de repetição. Garanta os importados de linha para a sua loja enquanto o estoque durar.</p>
+    <p class="fin-sub">Reposição pontual, sem previsão de repetição. Faturamento disponível a partir do <b>início de setembro</b> — garanta os importados de linha para a sua loja enquanto o estoque durar.</p>
     <div class="fin-contacts">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Contate seu representante para efetuar a compra</span>
     </div>
